@@ -8,14 +8,14 @@ client = RecombeeClient('sac2023-dev', 'aGEP9NP4K3NRZv2TNIC4n6ZIE4yAJSwl6naL4a8I
 course_df = pd.read_csv("books.csv")
 
 # Salvarea proprietati produse
-""""
+
 client.send(AddItemProperty('isbn', 'string'))
 client.send(AddItemProperty('title', 'string'))
 client.send(AddItemProperty('authors', 'string'))
 client.send(AddItemProperty('original_publication_year', 'string'))
 client.send(AddItemProperty('language_code', 'string'))
 client.send(AddItemProperty('average_rating', 'string'))
-"""
+
 
 # Salvare valori proprietati produse + upload id-uri produse
 requests = [SetItemValues(
